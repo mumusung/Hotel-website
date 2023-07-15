@@ -1,0 +1,52 @@
+.Head{
+    margin-top: 360px;
+    text-align: center;
+}
+.mumulogo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.resortpicture{
+    display: flex;
+    position: relative;
+    left: 200px;
+}
+.pic1{
+    transform: rotate(-15deg);
+    margin: 0 10px;
+    box-shadow: 0 0 20 2px rgba(0,0,0,.1);
+    transition: 0.5s;
+    z-index: 1;
+}
+.pic1:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+.pic2{
+    transform: rotate(15deg);
+    margin: 0 10px;
+    box-shadow: 0 0 20 2px rgba(0,0,0,.1);
+    transition: 0.5s;
+    z-index: 0;
+}
+.pic2:hover{
+    transform: scale(1.2);
+    z-index: 0;
+}
+.resortpicture img{
+    display: block;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: black;
+    background-clip: padding-box;
+}
+.Head p{
+    margin-top: 90px;
+    margin-left: 50px;
+    width: 700px;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    color:darkblue
+}
