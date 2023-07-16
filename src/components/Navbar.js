@@ -5,15 +5,22 @@ import './Navbar.css'
 
 
 function Navbar() {
+
   return (<div>
   <div className='background-image'></div>
     <div className='navbar'>
       <img src={logo} className='circle' alt='mumu'/>
         <ul className='nav'>
-        <Link className='navbar-item' to="/home">Home</Link>
-        <Link className='navbar-item' to="/about">About</Link>
-        <Link className='navbar-item' to="/contact">Contact</Link>
-        <Link className='navbar-item' to="/rooms">Room&suite</Link>
+        <a className='navbar-item' href="/home">Home</a>
+        <a className='navbar-item' href="/about">About</a>
+        <a className='navbar-item' href="/contact">Contact</a>
+        <div className='dropdown'>
+          <button className='dropdown-toggle'>Room&suite</button>
+          <div className='dropdown-menu'>
+            <a className='navroom2' href="/room1">Room1</a>
+        <a className='navroom2' href="/room2">Room2</a>
+        </div>
+        </div>
         </ul>
     </div>
     </div>

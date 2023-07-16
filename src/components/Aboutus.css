@@ -10,7 +10,7 @@
 .resortpicture{
     display: flex;
     position: relative;
-    left: 200px;
+    margin-left: 200px;
 }
 .pic1{
     transform: rotate(-15deg);

@@ -1,0 +1,24 @@
+.backgroundabout2{
+    background-color: white;
+    width: 100%;
+}
+.abtcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abtcontent p{
+    font-weight: lighter;
+}
+.abtcontent p span{
+    color: rgb(170, 201, 32);
+    font-weight: bold;
+    font-size: large;
+}
+.abtimage{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 15px;
+}

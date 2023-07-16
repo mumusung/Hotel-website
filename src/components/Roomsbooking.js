@@ -1,13 +1,10 @@
 import React from 'react'
 import './Roomsbooking.css'
-import {IoRestaurant} from 'react-icons/io5'
+import {IoRestaurant,IoSnowOutline,IoBoat} from 'react-icons/io5'
 import {AiFillCar} from 'react-icons/ai'
-import {IoBoat} from 'react-icons/io5'
 import { Link } from 'react-router-dom'
-import {BiWifi} from 'react-icons/bi'
-import {BiSolidDrink} from 'react-icons/bi'
+import {BiWifi,BiSolidDrink} from 'react-icons/bi'
 import {GiBathtub} from 'react-icons/gi'
-import {IoSnowOutline} from 'react-icons/io5'
 
 function Roomsbooking() {
   return (<div className='background-image1'>
@@ -54,7 +51,7 @@ function Roomsbooking() {
             <IoBoat size={40}/>
           </div>
           <p className='icon1-detail'><span>ชุดอาหารเช้า</span><span>รถกอล์ฟ/มอเตอร์ไซค์</span><span>เรือสปีดโบ๊ท</span></p>
-          <Link to="/room1"><button className='buttonitem'>ดูรายละเอียดเพิ่มเติม</button></Link>
+          <Link to="/room2"><button className='buttonitem'>ดูรายละเอียดเพิ่มเติม</button></Link>
         </div>
         <div className='Card1'>
         <img className='roomview' src="https://images.unsplash.com/photo-1602693680528-56cf5d238b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt='roomservice' height={600}width={800}/>
@@ -62,16 +59,16 @@ function Roomsbooking() {
       </div>
       <div className='displayicon'>
       <div className='icon2'>
-          <BiWifi  size={100}className='iconradius1' style={{color:'orange'}}/>
+          <BiWifi  size={70}className='iconradius1' style={{color:'orange'}}/>
           </div>
           <div className='icon2'>
-          <BiSolidDrink size={100} className='iconradius' style={{color:'orange'}}/>
+          <BiSolidDrink size={70} className='iconradius' style={{color:'orange'}}/>
           </div>
-          <div className='icon2'><GiBathtub size={100} className='iconradius' style={{color:'orange'}}/>
+          <div className='icon2'><GiBathtub size={70} className='iconradius' style={{color:'orange'}}/>
           </div>
-          <div className='icon2'><IoSnowOutline size={100} className='iconradius' style={{color:'orange'}}/>
+          <div className='icon2'><IoSnowOutline size={70} className='iconradius' style={{color:'orange'}}/>
           </div>
-          <div className='icon2'><IoRestaurant size={100} className='iconradius' style={{color:'orange'}}/>
+          <div className='icon2'><IoRestaurant size={70} className='iconradius' style={{color:'orange'}}/>
       </div>
       </div>
       <div>

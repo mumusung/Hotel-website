@@ -1,0 +1,39 @@
+.backgroundabout{
+    margin-top: 20px;
+    background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80);
+    width:100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    z-index: -1;
+}
+.backgroundabout::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    z-index: 0;
+    opacity: 0.4;
+}
+.mumulogo3{
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.abouthotel{
+    position: relative;
+    content: "";
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    opacity: 1;
+    z-index: 1;
+    text-align: center;
+}
+.abouttext1{
+    color: white;
+}

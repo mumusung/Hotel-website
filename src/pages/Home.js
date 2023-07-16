@@ -3,11 +3,12 @@ import Navbar from '../components/Navbar'
 import Welcometext from '../components/Welcometext'
 import Aboutus from '../components/Aboutus'
 import Roomsbooking from '../components/Roomsbooking'
+import Footer from '../components/Footer'
 function Home() {
   return (
     <>
     <Navbar/>
-    <div>Home</div>
+    <div><br></br></div>
     <div>
           <Welcometext/>
         </div>
@@ -16,6 +17,9 @@ function Home() {
         </div>
         <div>
           <Roomsbooking/>
+        </div>
+        <div>
+          <Footer/>
         </div>
     </>
   )
