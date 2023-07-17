@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import logo from '../images/mumu.jpg'
 import './Navbar.css'
 
@@ -13,7 +12,6 @@ function Navbar() {
         <ul className='nav'>
         <a className='navbar-item' href="/home">Home</a>
         <a className='navbar-item' href="/about">About</a>
-        <a className='navbar-item' href="/contact">Contact</a>
         <div className='dropdown'>
           <button className='dropdown-toggle'>Room&suite</button>
           <div className='dropdown-menu'>

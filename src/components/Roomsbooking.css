@@ -67,7 +67,7 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3 ease;
-    background-color: white;
+    background-color: rgba(211, 141, 11, 0.87);
 }
 .buttonitem:hover{
     transition: 0.7s;
@@ -117,17 +117,17 @@
     color: lightblue;
 }
 .wifi{
-    margin-left: 180px;
+    margin-left: 220px;
 }
 .welcome{
-    margin-left: 150px;
+    margin-left: 130px;
 }
 .bathub{
-    margin-left: 140px;
+    margin-left: 120px;
 }
 .air{
-    margin-left: 145px;
+    margin-left: 125px;
 }
 .breakfast{
-    margin-left: 105px;
+    margin-left: 82px;
 }

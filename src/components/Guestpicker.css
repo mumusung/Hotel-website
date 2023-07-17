@@ -1,0 +1,14 @@
+.custom-guestpicker select {
+    font-size: 30px;
+    width: 150px;
+    height: 40px;
+    box-sizing: content-box;
+    width: 300px;
+    border: solid black 5px;
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+  

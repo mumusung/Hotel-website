@@ -1,0 +1,24 @@
+.startdate{
+    cursor: pointer;
+}
+.enddate{
+    cursor: pointer;
+}
+.Datereserv{
+    display: flex;
+    gap: 1rem;
+}
+.startreserv{
+    box-sizing: content-box;
+    width: 300px;
+    border: solid black 5px;
+    padding: 30px;
+    border-radius: 15px
+}
+.endreserv{
+    box-sizing: content-box;
+    width: 300px;
+    border: solid black 5px;
+    padding: 30px;
+    border-radius: 15px
+}

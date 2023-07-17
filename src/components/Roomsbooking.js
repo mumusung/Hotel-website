@@ -2,7 +2,6 @@ import React from 'react'
 import './Roomsbooking.css'
 import {IoRestaurant,IoSnowOutline,IoBoat} from 'react-icons/io5'
 import {AiFillCar} from 'react-icons/ai'
-import { Link } from 'react-router-dom'
 import {BiWifi,BiSolidDrink} from 'react-icons/bi'
 import {GiBathtub} from 'react-icons/gi'
 
@@ -32,7 +31,7 @@ function Roomsbooking() {
             <IoBoat size={40}/>
           </div>
           <p className='icon1-detail'><span>ชุดอาหารเช้า</span><span>รถกอล์ฟ/มอเตอร์ไซค์</span><span>เรือสปีดโบ๊ท</span></p>
-          <Link to="/room1"><button className='buttonitem'>ดูรายละเอียดเพิ่มเติม</button></Link>
+          <a href="/room1"><button className='buttonitem'>ดูรายละเอียดเพิ่มเติม</button></a>
         </div>
       </div>
       <div className='Card-container2'>
@@ -51,7 +50,7 @@ function Roomsbooking() {
             <IoBoat size={40}/>
           </div>
           <p className='icon1-detail'><span>ชุดอาหารเช้า</span><span>รถกอล์ฟ/มอเตอร์ไซค์</span><span>เรือสปีดโบ๊ท</span></p>
-          <Link to="/room2"><button className='buttonitem'>ดูรายละเอียดเพิ่มเติม</button></Link>
+          <a href="/room2"><button className='buttonitem'>ดูรายละเอียดเพิ่มเติม</button></a>
         </div>
         <div className='Card1'>
         <img className='roomview' src="https://images.unsplash.com/photo-1602693680528-56cf5d238b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt='roomservice' height={600}width={800}/>

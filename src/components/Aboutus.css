@@ -50,3 +50,7 @@
     font-style: italic;
     color:darkblue
 }
+.Head p span{
+    color: green;
+    font-weight: bolder;
+}
