@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './Guestpicker.css';
 
-const Guestpicker = () => {
+const Guestpicker = ({onSelectGuests}) => {
   const [selectedGuests, setSelectedGuests] = useState('1');
 
   const handleGuestsChange = (e) => {
-    setSelectedGuests(e.target.value);
+    const guests = e.target.value;
+    setSelectedGuests(guests);
+    onSelectGuests(guests)
   };
 
   return (

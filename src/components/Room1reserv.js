@@ -6,11 +6,34 @@ import { BiWifi,BiSolidDrink } from 'react-icons/bi'
 import { GiBathtub } from 'react-icons/gi'
 import { IoSnowOutline } from 'react-icons/io5'
 import {useState} from 'react'
-import DatePicker from './DatePicker'
 import Guestpicker from './Guestpicker'
+import DateRangePicker from './DatePicker'
 
 
-function Room1reserv() {
+function Room1reserv(onSelectGuests) {
+  
+  const [formattedStartDate, setFormattedStartDate] = useState('');
+  const [formattedEnddate, setFormattedEnddate] = useState('');
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [numberOfGuests, setNumberOfGuests] = useState('1');
+  const [isReservationSuccessful, setIsReservationSuccessful] = useState(false);
+  const handleClick = (guests) => {
+    setNumberOfGuests(guests);
+  };
+
+  const Clickbutton = () =>
+  {
+    setIsButtonClicked(true);
+    setIsReservationSuccessful(false);
+  };
+
+  const handleSubmitReservation = () =>{
+    setIsReservationSuccessful(true);
+    setTimeout(() => {
+      setIsReservationSuccessful(false);
+    }, 2000);
+  };
+
   return (<div className='reserv1background'>
     <div className='room1text1'>
         <h4><span>“</span>ยกระดับประสบการณ์การพักผ่อนของคุณให้เหนือกว่า ด้วยห้องพักที่ตกแต่งหรูหราสไตล์โมเดิร์นแบบตะวันตก ด้วย</h4>
@@ -83,12 +106,32 @@ function Room1reserv() {
             <label style={{fontSize:'30px'}}>Date <span>Number of guest</span></label>
             </div>
             <div className='reservdate1'>
-            <DatePicker/>
-            <Guestpicker/>
+            <DateRangePicker setFormattedStartDate={setFormattedStartDate}
+                             setFormattedEnddate={setFormattedEnddate}/>
+            <Guestpicker onSelectGuests={handleClick}/>
             </div>
             </div>
-            <button className='confirmbutton1'>Confirm</button>
-            <label htmlFor='date'>mumu</label>
+            <div className='buttonconfirm'>
+            <button onClick={Clickbutton}className='confirmbutton1'>Confirm</button>
+            {isButtonClicked && (
+        <div className='confirmdate'>
+          <label htmlFor='name'>Name</label>
+          <input type='name'placeholder='your name'></input>
+          <label htmlFor='email'>Email</label>
+          <input type='email' placeholder='exaple@gmail.com'></input>
+          <label htmlFor='phone'>Tel</label>
+          <input type='phone' placeholder='012-3456789'></input>
+          <label htmlFor='date'>Choose date : {formattedStartDate}</label>
+          <label htmlFor='date'>To : {formattedEnddate}</label>
+          <label htmlFor='guest'>Guest: {numberOfGuests}</label>
+          <button onClick={handleSubmitReservation}>Reserv</button>
+        </div>
+      )} {isReservationSuccessful && (
+        <div className='reservation-success-alert'>
+          <h1>Thank you for reservation! Your Reservation has been confirmed check your email</h1>
+        </div>)}
+            </div>
+            
     </div>
   )
 }

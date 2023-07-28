@@ -75,3 +75,40 @@
     width: 300px;
     height: 100px;
 }
+.buttonconfirm{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.label1{
+    margin-top: 30px;
+
+}
+.confirmdate{
+        margin-top: 30px;
+        font-size: 30px;
+        width: 150px;
+        height: 600px;
+        box-sizing: content-box;
+        width: 300px;
+        border: solid black 5px;
+        padding: 30px;
+        border-radius: 15px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+.reservation-success-alert{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #524e4e;
+        border: 1px solid #dddddd;
+        padding: 20px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        color: rgb(193, 196, 25);
+      }
